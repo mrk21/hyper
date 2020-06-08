@@ -1,3 +1,4 @@
+/*
 // Packages
 const electron = require('electron');
 const {app} = electron;
@@ -60,8 +61,11 @@ async function init() {
 
   isInit = true;
 }
+*/
 
-module.exports = win => {
+module.exports = () => {
+  /*
+
   if (!isInit) {
     init();
   }
@@ -98,4 +102,5 @@ module.exports = win => {
   win.on('close', () => {
     autoUpdater.removeListener(eventName, onupdate);
   });
+*/
 };
